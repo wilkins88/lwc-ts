@@ -1,0 +1,31 @@
+{
+    "name": "lwc-ts",
+    "version": "0.0.1",
+    "description": "Quickstart for using Typescript and other modern development tooling with Salesforce LWC",
+    "scripts": {},
+    "devDependencies": {
+        "@babel/cli": "^7.14.3",
+        "@babel/core": "^7.14.3",
+        "@babel/plugin-proposal-optional-chaining": "^7.14.2",
+        "@babel/plugin-syntax-decorators": "^7.12.13",
+        "@babel/preset-typescript": "^7.13.0",
+        "@prettier/plugin-xml": "^0.13.1",
+        "@salesforce/eslint-config-lwc": "^1.0.0",
+        "@salesforce/lightning-lsp-common": "^3.0.13",
+        "@salesforce/lwc-language-server": "^3.0.13",
+        "@salesforce/sfdx-lwc-jest": "^0.12.3",
+        "@types/glob": "^7.1.3",
+        "@types/jest": "^26.0.23",
+        "@typescript-eslint/eslint-plugin": "^4.24.0",
+        "@typescript-eslint/parser": "^4.24.0",
+        "eslint": "^7.26.0",
+        "eslint-config-prettier": "^8.3.0",
+        "glob": "^7.1.7",
+        "husky": "^6.0.0",
+        "prettier": "^2.3.0",
+        "prettier-plugin-apex": "^1.9.1",
+        "sfdx-node": "^3.0.0",
+        "ts-node": "^9.1.1",
+        "typescript": "^4.2.4"
+    }
+}
