@@ -2,7 +2,10 @@
     "name": "lwc-ts",
     "version": "0.0.1",
     "description": "Quickstart for using Typescript and other modern development tooling with Salesforce LWC",
-    "scripts": {},
+    "scripts": {
+        "babel": "babel --extensions \".ts\" --out-dir . --relative \"force-app/**/lwc\" --verbose",
+        "babelw": "yarn run babel -w"
+    },
     "devDependencies": {
         "@babel/cli": "^7.14.3",
         "@babel/core": "^7.14.3",

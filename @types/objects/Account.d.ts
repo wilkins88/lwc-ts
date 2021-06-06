@@ -5,7 +5,7 @@
  * Ideally, queried fields are somewhat consolidated in an appropriate selector layer
  * and these interfaces can be closely aligned with selector fields
  */
-export interface Account {
+export type Account {
     Id: string;
     Name?: string;
 }
