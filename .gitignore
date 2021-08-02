@@ -144,4 +144,5 @@ $RECYCLE.BIN/
 
 # ignore generated LWC JS files
 force-app/**/lwc/**/*.js
+tsconfig.json
 

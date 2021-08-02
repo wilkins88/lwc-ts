@@ -11,7 +11,10 @@
         "noFallthroughCasesInSwitch": true,
         "moduleResolution": "node",
         "baseUrl": ".",
-        "paths": { "c/demoComponent.ts": ["./force-app/main/default/lwc/demoComponent.ts"]},
+        "paths": { 
+            "c/demoComponent.ts": ["./force-app/main/default/lwc/demoComponent.ts"],
+            "types/*": ["@types/@salesforce/apex/*", "@types/apex/*"]
+        },
         "esModuleInterop": true,
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
@@ -19,7 +22,7 @@
         "resolveJsonModule": true
     },
     "include": [
-        "**/lwc",
+        "force-app/main/default/**/lwc/**/*.ts",
         "./@types/**/*.d.ts"
     ],
     "exclude": [

@@ -1,1 +1,4 @@
-// TODO lightning api
+export type ControllerResponse<T> = {
+    data: T;
+    Error: any;
+}

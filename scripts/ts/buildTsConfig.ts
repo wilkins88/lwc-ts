@@ -2,6 +2,7 @@ import * as fs from 'fs';
 import { join, resolve } from 'path';
 import { WorkspaceContext, componentUtil, utils } from '@salesforce/lightning-lsp-common';
 
+
 // load an LWC work space at the root directory
 const WORKSPACE: WorkspaceContext = new WorkspaceContext([
     resolve(__dirname, '..', '..')
@@ -9,7 +10,7 @@ const WORKSPACE: WorkspaceContext = new WorkspaceContext([
 
 // define typings paths
 const TYPINGS_PATHS: Record<string, string[]>  = {
-    'types/*': ['@types/*']
+    'types/*': ['@types/apex/*', '@types/lightning/*', '@types/objects'], // register non-SF imports here
 };
 
 
@@ -18,6 +19,7 @@ export async function buildTsConfig(): Promise<void> {
         ...TYPINGS_PATHS
     };
     // load .js modules
+    // we need to explicitly declare each lwc ts module due to weird namespacing stuff with SF
     const files: string[] = await WORKSPACE.findAllModules();
 
     // collect the paths for all modules in the workspace

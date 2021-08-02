@@ -3,7 +3,7 @@
  */
 import { Account } from 'types/account';
 
-export type DemoDTO {
+export type DemoDTO = {
     account: Account;
     guid: string
 }
