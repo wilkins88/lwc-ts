@@ -10,7 +10,8 @@ const WORKSPACE: WorkspaceContext = new WorkspaceContext([
 
 // define typings paths
 const TYPINGS_PATHS: Record<string, string[]>  = {
-    'types/*': ['@types/apex/*', '@types/lightning/*', '@types/objects'], // register non-SF imports here
+    'types/*': ['@types/apex/*', '@types/lightning/*', '@types/objects/*'], // register non-SF imports here
+    "lwc": ["./@types/lightning/lwc.d.ts"]
 };
 
 
